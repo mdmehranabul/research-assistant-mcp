@@ -1,6 +1,6 @@
 [project]
-name = "research-assistant-mcp"
-version = "0.1.0"
+name = "research-assistant-mcp-mdmehranabul"
+version = "0.1.2"
 description = "A Model Context Protocol server for research assistance with ChromaDB vector storage"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -37,6 +37,7 @@ dependencies = [
     "requests>=2.33.1",
     "scipy>=1.17.1",
     "streamlit>=1.58.0",
+    "twine>=6.2.0",
     "yahoo-finance-mcp-server>=0.1.2",
 ]
 
