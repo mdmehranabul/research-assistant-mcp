@@ -4128,16 +4128,21 @@ wheels = [
 ]
 
 [[package]]
-name = "research-assistant-mcp"
-version = "0.1.0"
+name = "research-assistant-mcp-mdmehranabul"
+version = "0.1.3"
 source = { editable = "." }
 dependencies = [
-    { name = "fastapi" },
     { name = "fastmcp" },
-    { name = "langchain" },
     { name = "langchain-chroma" },
-    { name = "langchain-mcp-adapters" },
+    { name = "langchain-core" },
     { name = "langchain-ollama" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "fastapi" },
+    { name = "langchain" },
+    { name = "langchain-mcp-adapters" },
     { name = "langchain-openai" },
     { name = "langchain-text-splitters" },
     { name = "langgraph" },
@@ -4160,12 +4165,17 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "fastapi", specifier = ">=0.136.1" },
     { name = "fastmcp", specifier = ">=3.2.4" },
-    { name = "langchain", specifier = ">=1.3.2" },
     { name = "langchain-chroma", specifier = ">=1.1.0" },
-    { name = "langchain-mcp-adapters", specifier = ">=0.3.0" },
+    { name = "langchain-core", specifier = ">=1.1.0" },
     { name = "langchain-ollama", specifier = ">=1.1.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "fastapi", specifier = ">=0.136.1" },
+    { name = "langchain", specifier = ">=1.3.2" },
+    { name = "langchain-mcp-adapters", specifier = ">=0.3.0" },
     { name = "langchain-openai", specifier = ">=1.3.2" },
     { name = "langchain-text-splitters", specifier = ">=1.1.2" },
     { name = "langgraph", specifier = ">=1.2.2" },
